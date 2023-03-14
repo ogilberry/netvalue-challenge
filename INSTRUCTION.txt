@@ -1,0 +1,24 @@
+The script challenge_script.py processes each DNA sequence provided using a clearly defined algorithm to determine if they are each 'positive' or 'negative'. These results are then compared to the provided expected labels to determine the effectiveness of the algorithm in challenge_script.py, which is then reported on.
+
+USAGE
+python challenge_script.py
+
+INPUT
+In the input_data folder, provide the files 'sequences.txt' and 'true_labels.txt', containing on separate lines the DNA sequences and their corresponding labels ('negative' or 'positive') respectively. The text in both files is case sensitive.
+Any invalid inputs will be ignored and not counted in the algorithm reporting.
+There are no command line arguments. 
+
+OUTPUT
+When successful, the program will print a brief analysis of the algorithm's effectiveness, listing its accuracy, precision, and recall as percentages. These are each defined below.
+
+Comparison outcomes:
+- True positive (TP): sequence was correctly classified as positive
+- False positive (FP): sequence was incorrectly classified as positive
+- True Negative (TN): sequence was correctly classified as negative
+- False Negative (FN): sequence was incorrectly classified as negative
+
+Metric definitions: 
+- Accuracy: (TP + TN) / (TP + TN + FP + FN)
+- Precision: TP / (TP + FP)
+- Recall: TP / (TP + FN)
+
